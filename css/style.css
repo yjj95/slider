@@ -1,0 +1,4 @@
+.current{transform:translateX(0%);z-index:1;}
+.leave{transform:translateX(-100%)/**/}
+.enter{transform:translateX(100%)}
+.right{transform:translateX(100)}
