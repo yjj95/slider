@@ -11,12 +11,11 @@ for(var i=0;i<size;i++){
     buttons.eq(i).on('click',(e)=>{
         var index=$(e.currentTarget).index()
         let px=index*$("#pics").width()
+        //要接着点的那个播
+        n=index
         pics.css({'transform':`translateX(-${px}px)`})
-        var x=index
-        //console.log(n)
-        buttons.eq(x).addClass('red')
+        buttons.eq(n).addClass('red')
     .siblings().removeClass('red')
-    //要接着点的那个播
     })
     
 }
