@@ -1,6 +1,17 @@
-.pics img{position:absolute;top:0;width:100%;transition:all 0.5s;left:0;}
-.windows{width:200px;height:200px;overflow:hidden;border:1px solid black;}
-.pics{position:relative;}
+.pics img{width:100%;}
+.windows{
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    margin: auto;
+}
+.pics{
+    display: flex;
+    transition:all 0.5s;
+}
+.buttons{
+    text-align: center;
+}
 .red{color:red;}
     /*img:nth-child(1){left:0;}
     img:nth-child(2){left:100%;}

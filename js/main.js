@@ -39,3 +39,13 @@ setTimeout(function(){
     $('img:nth-child(3)').css({'transform':'translateX(0%)'})
   })
 },3000)*/
+/*
+  1.第一张left：0;其他所有left:100%;
+    当前：translateX(0)/translateX(-100%)
+    leave:translateX(-100%)/translateX(-200%)
+    enter:translateX(100%)/translateX(0)
+  2.所有left：0;第一张z-index:1;
+    当前：translateX(0)
+    leave:translateX(-100%)
+    enter:translateX(100%)
+*/
