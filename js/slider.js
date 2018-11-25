@@ -27,7 +27,7 @@ var timer=setInterval(()=>{
         .addClass('red')
         .siblings().removeClass('red')
     n+=1
-},1000)
+},3000)
 $('.windows').on('mouseenter',()=>{
     clearInterval(timer)
 })
