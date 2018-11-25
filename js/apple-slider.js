@@ -1,7 +1,9 @@
-let buttons=$("#menus>ul>li.inact")
-let pics=$("#slides")
+var buttons=$("#menus>ul>li.inact")
+var pics=$("#slides")
+var timer=null
 buttons.eq(0).addClass('active')
 let size=buttons.length
+clearInterval(timer)
 for(var i=0;i<size;i++){
     buttons.eq(i).on('click',(e)=>{
         var index=$(e.currentTarget).index()-1
@@ -15,7 +17,7 @@ for(var i=0;i<size;i++){
 }
 //自动
 var n=0;
-var timer=setInterval(()=>{
+timer=setInterval(()=>{
     buttons.eq(n%size).trigger('click')
         .addClass('active')
         .siblings().removeClass('active')
@@ -25,7 +27,7 @@ $('.wrapper').on('mouseenter',()=>{
     clearInterval(timer)
 })
 $('.wrapper').on('mouseleave',()=>{
-    var timer=setInterval(()=>{
+    timer=setInterval(()=>{
         buttons.eq(n%size).trigger('click')
             .addClass('active')
             .siblings().removeClass('active')
